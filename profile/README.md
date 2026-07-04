@@ -21,6 +21,7 @@ Fenix is a collection of independent packages designed to work together while re
 
 - **fenix/core** — Core framework functionality.
 - **fenix/admin** — Administration panel built on top of Fenix.
+- **fenix/localization** — Localization foundation for managing locales, translations, and runtime language support.
 
 ## Architecture
 
@@ -33,9 +34,9 @@ fenix/admin
       ▼
 fenix/core
       │
-      ├──────────────┐
-      ▼              ▼
-fenix/ui   fenix/theme-default
+      ├──────────────┬────────────────────┐
+      ▼              ▼                    ▼
+fenix/ui   fenix/theme-default   fenix/localization
 
 Development
 
