@@ -1,3 +1,4 @@
+````md
 # Fenix
 
 A modular ecosystem for building modern Laravel applications.
@@ -22,27 +23,23 @@ Fenix is a collection of independent packages designed to work together while re
 - **fenix/core** — Core framework functionality.
 - **fenix/admin** — Administration panel built on top of Fenix.
 - **fenix/localization** — Localization foundation for managing locales, translations, and runtime language support.
+- **fenix/media-library** — Media management with uploads, image processing, storage, and reusable file handling.
 
 ## Architecture
 
-```
+```text
 Application
-      │
-      ▼
-fenix/admin
-      │
-      ▼
-fenix/core
-      │
-      ├──────────────┬────────────────────┐
-      ▼              ▼                    ▼
-fenix/ui   fenix/theme-default   fenix/localization
+└── fenix/admin
+    └── fenix/core
+        ├── fenix/ui
+        ├── fenix/theme-default
+        ├── fenix/localization
+        └── fenix/media-library
 
 Development
-
-fenix/dev-kit
-fenix/hello
-fenix/lab
+├── fenix/dev-kit
+├── fenix/hello
+└── fenix/lab
 ```
 
 ## Goals
@@ -56,3 +53,4 @@ fenix/lab
 ---
 
 Built with ❤️ using Laravel.
+````
