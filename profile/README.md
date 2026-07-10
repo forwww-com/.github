@@ -25,6 +25,9 @@ Fenix is a collection of independent packages designed to work together while re
 - **fenix/localization** — Localization foundation for managing locales, translations, and runtime language support.
 - **fenix/media-library** — Media management with uploads, image processing, storage, and reusable file handling.
 
+## Modules
+- **fenix/blog** — Blogging module with posts, categories, tags, pages, and content management.
+
 ## Architecture
 
 ```text
@@ -35,6 +38,9 @@ Application
         ├── fenix/theme-default
         ├── fenix/localization
         └── fenix/media-library
+
+Modules
+└── fenix/blog
 
 Development
 ├── fenix/dev-kit
